@@ -1,5 +1,12 @@
+/* Custom CSS to override Bootswatch Cerulean settings */
+
 .navbar-brand {
     font-size: 1.5em;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 body {
@@ -26,12 +33,23 @@ body {
 .img-multimedia {
     margin-right: 5px;
     margin-bottom: 10px;
-    height: 200px;
-    width: auto;
+    width: 300px;
+    height: auto;
     float: left;
 }
 
 .p-multimedia {
-    margin-right: 20px;
     font-size: small;
+}
+
+.img-small {
+    width: 170px;
+    height: 120px;
+    float: left;
+    border-radius: 1px;
+    border-color: #2FA4E7;
+}
+
+.img-small:hover {
+    border: 2px solid #2FA4E7;
 }
