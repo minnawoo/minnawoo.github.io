@@ -1,48 +1,102 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <title>Bio</title>
-        <style>
-            div.content {
-                max-width: 500px;
-                margin: auto;
-            }
-        </style>
-    </head>
-    <body>
-        <div class='content'>
-            <h1 style="font-size: 3em">About Me</h1>
-            <hr></hr>
-            <img style="padding:10px; float:left;" src = 'assets/LinkedIn headshot.jpeg' alt="linkedin headshot" width = 100/></a>
-            <em style="font-size: 12pt">
-                Collaborative and self-driven data analyst with two years of professional data-wrangling experience. Currently taking night classes in the U of T SCS Data Analytics Bootcamp and working part-time in the service industry. Looking for full-time data analyst positions beginning in April 2019.
-            </em>
-            <br></br>
-            <!--Ordered List-->
-            <ol style="font-size: 1em">
-                    <li><a href = "https://www.linkedin.com/in/minna-wu-90b4b059/" target="_blank">
-                        <strong>LinkedIn</strong></a></li>
-                        <a href = "https://www.linkedin.com/in/minna-wu-90b4b059/" target="_blank">
-                            <img src = 'assets/linkedin-icon.png' alt="linkedin icon" width = 100 ></a>
-                    <li><a href = "https://github.com/minnawoo" target="_blank">
-                        <strong>GitHub</strong></a></li>
-                        <a href = "https://github.com/minnawoo" target="_blank">
-                            <img src = 'assets/github-mark.png' alt="github icon" width = 100 ></a>
-                    <li><a href = "https://sites.google.com/site/eportfoliominnawu/home" target="_blank">
-                        <strong>ePortfolio</strong></a></li>
-                        <!--Showcase Image Link-->
-                        <a href = 'https://sites.google.com/site/eportfoliominnawu/general-tamu-and-abet-outcomes/outcomes-of-web-tool-redesign' target="_blank">
-                            <img src = 'assets/Showcase Icon.png' alt="Showcase" width = 200></a>
-                    <li><a href = "project_images.html" target="_blank">
-                        <strong>Pandas Project Images</strong></a></li>
-                        <img src = 'assets/Metastatic Spread During Treatment.png' alt="Metastatic" width = 300></a>
-                    <li><a href = "https://www.youtube.com/embed/4a7jEAnPVE4?autoplay=1" target="_blank">
-                        <strong>Youtube</strong></a></li>
-                        <iframe width="500" height="400"
-                            src="https://www.youtube.com/embed/4a7jEAnPVE4?autoplay=1">
-                        </iframe>
-                </ol>
+<head>
+    <meta charset="utf-8">
+    <title>Latitude vs. Weather Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="assets/bootswatch_cerulean/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="assets/bootswatch_cerulean/custom.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a href="#" class="navbar-brand">latitude & weather</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span
+                                class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="themes">
+                            <a class="dropdown-item" href="#">Max Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Windspeed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <!--Rest of landing page-->
+    <div class="container">
+
+        <!--Custom spacing (to fix bug in the Bootswatch Cerulean template)-->
+        <div class="row">
+            <div class="col-lg-12 pt-5"></div>
+            <div class="col-lg-12 pt-5"></div>
+            <div class="col-lg-12 pt-5"></div>
+        </div>
+        
+        <!--Body of document-->
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="jumbotron">
+                            <h1 class="display-5">Summary</h1>
+                            <p class="lead">Latitude vs. Weather</p>
+                            <hr class="my-4">
+                            <img class="img-multimedia" src="/assets/images/City Latitude vs. Max Temperature (11.19.18).png">
+                            <p class="p-multimedia">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, I first pulled data through the Python module, <a href="https://github.com/wingchen/citipy">citipy</a>, to assemble a dataset on over 500 cities.
+                                <br/><br/>After assembling the dataset, I used Matplotlib to plot various aspects of weather vs. latitude. Factors I looked at include temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="jumbotron">
+                            <h1 class="display-6">Visualizations</h1>
+                            <hr class="my-4">
+                            <div class="col-lg-12 pt-4"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-thumbnail" src="/assets/images/City Latitude vs. Max Temperature (11.19.18).png">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-thumbnail" src="/assets/images/City Latitude vs. Humidity (11.19.18).png">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 pt-5"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <img class="img-thumbnail" src="/assets/images/City Latitude vs. Cloudiness (11.19.18).png">
+                                </div>
+                                <div class="col-lg-6">
+                                    <img class="img-thumbnail" src="/assets/images/City Latitude vs. Wind Speed (11.19.18).png">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 pt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootswatch_cerulean/jquery.min.js"></script>
+    <script src="assets/bootswatch_cerulean/popper.min.js"></script>
+    <script src="assets/bootswatch_cerulean/bootstrap.min.js"></script>
+    <script src="assets/bootswatch_cerulean/custom.js"></script>
+</body>
+
 </html>
