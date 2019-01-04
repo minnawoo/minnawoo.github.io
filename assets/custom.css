@@ -33,7 +33,7 @@ body {
 .img-multimedia {
     margin-right: 5px;
     margin-bottom: 10px;
-    width: 300px;
+    width: 325px;
     height: auto;
     float: left;
 }
@@ -44,12 +44,48 @@ body {
 
 .img-small {
     width: 170px;
-    height: 120px;
+    height: 115px;
     float: left;
-    border-radius: 1px;
-    border-color: #2FA4E7;
 }
 
 .img-small:hover {
     border: 2px solid #2FA4E7;
+}
+
+/* Adding media queries to reduce image sizes for smaller screen sizes so that the four-across layout is preserved */
+@media (max-width: 800px) {
+
+    .img-multimedia {
+        width: 300px;
+    }
+
+    .img-small {
+        width: 120px;
+        height: 75px;
+    }
+
+}
+@media (max-width: 525px) {
+
+    .img-multimedia {
+        width: 300px;
+    }
+
+    .img-small {
+        width: 75px;
+        height: 50px;
+    }
+
+}
+@media (max-width: 480px) {
+
+    .img-multimedia {
+        width: 300px;
+    }
+
+    .img-small {
+        width: 70px;
+        height: 45px;
+    }
+
 }
