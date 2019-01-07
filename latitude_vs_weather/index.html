@@ -14,7 +14,7 @@
 <body>
     <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <div class="container">
-            <a href="#" class="navbar-brand">latitude & weather</a>
+            <a href="/" class="navbar-brand">latitude & weather</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,17 +25,17 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Plots <span
                                 class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="themes">
-                            <a class="dropdown-item" href="#">Max Temperature</a>
-                            <a class="dropdown-item" href="#">Humidity</a>
-                            <a class="dropdown-item" href="#">Cloudiness</a>
-                            <a class="dropdown-item" href="#">Windspeed</a>
+                            <a class="dropdown-item" href="/visualizations/temp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="/visualizations/humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="/visualizations/cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="/visualizations/windspeed.html">Windspeed</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Comparison</a>
+                        <a class="nav-link" href="comparisons.html">Comparison</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Data</a>
+                        <a class="nav-link" href="data.html">Data</a>
                     </li>
                 </ul>
             </div>
@@ -73,10 +73,18 @@
                         <hr class="my-4">
                         <div class="row">
                             <div class="d-flex justify-content-center flex-wrap">
-                                <img class="img-small" src="/assets/images/City Latitude vs. Max Temperature (11.19.18).png">
-                                <img class="img-small" src="/assets/images/City Latitude vs. Humidity (11.19.18).png">
-                                <img class="img-small" src="/assets/images/City Latitude vs. Cloudiness (11.19.18).png">
-                                <img class="img-small" src="/assets/images/City Latitude vs. Wind Speed (11.19.18).png">
+                                <a href="/visualizations/temp.html">
+                                    <img class="img-small" src="/assets/images/City Latitude vs. Max Temperature (11.19.18).png" title = "Latitude vs. Max Temperature">
+                                </a>
+                                <a href="/visualizations/humidity.html">
+                                    <img class="img-small" src="/assets/images/City Latitude vs. Humidity (11.19.18).png" title = "Latitude vs. Humidity">
+                                </a>
+                                <a href="/visualizations/cloudiness.html">
+                                    <img class="img-small" src="/assets/images/City Latitude vs. Cloudiness (11.19.18).png" title = "Latitude vs. Cloudiness">
+                                </a>
+                                <a href="/visualizations/windspeed.html">
+                                    <img class="img-small" src="/assets/images/City Latitude vs. Wind Speed (11.19.18).png" title = "Latitude vs. Wind Speed">
+                                </a>
                             </div>
                         </div>
                     </div>

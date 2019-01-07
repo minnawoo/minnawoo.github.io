@@ -52,40 +52,74 @@ body {
     border: 2px solid #2FA4E7;
 }
 
-/* Adding media queries to reduce image sizes for smaller screen sizes so that the four-across layout is preserved */
-@media (max-width: 800px) {
+.img-big {
+    width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
 
+.img-big:hover {
+    border: 2px solid #2FA4E7;
+}
+
+.img-thumbnail {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+th {
+    font-size: small;
+}
+
+td {
+    font-size: small;
+}
+
+/* Adding media queries to adjust image sizes for smaller screen sizes
+1. For the Visualizations component so that the four-across layout is preserved for smaller screens
+2. For the Comparisons component so that the images do not ever overlap when zoomed in and are 100% width for smaller screens */
+
+@media (max-width: 1000px) {
+    .img-big {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
     .img-multimedia {
         width: 300px;
     }
-
     .img-small {
         width: 120px;
         height: 75px;
     }
-
+    .img-big {
+        width: 100%;
+        height: auto;
+    }
 }
-@media (max-width: 525px) {
 
+@media (max-width: 525px) {
     .img-multimedia {
         width: 300px;
     }
-
     .img-small {
         width: 75px;
         height: 50px;
     }
-
 }
-@media (max-width: 480px) {
 
+@media (max-width: 480px) {
     .img-multimedia {
         width: 300px;
     }
-
     .img-small {
         width: 70px;
         height: 45px;
     }
-
 }
